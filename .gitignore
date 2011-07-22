@@ -8,3 +8,6 @@ doc/
 *~
 .project
 .DS_Store
+ config/database.yml
+.idea
+

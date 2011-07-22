@@ -11,10 +11,10 @@ development:
  reconnect: false
  database: townofmassanutten_oh_development
  pool: 5
- username: olgahauze
- password: gideon
+ username:
+ password:
  socket: /var/run/mysqld/mysqld.sock
- 
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,8 +33,8 @@ production:
  adapter: mysql2
  encoding: utf8
  reconnect: false
- database: towno1_massanutten
+ database: townofmassanutten_oh_production
  pool: 5
- username: towno1_olgahauze
- password: 5346Trevino
+ username:
+ password:
  socket: /var/run/mysqld/mysqld.sock
