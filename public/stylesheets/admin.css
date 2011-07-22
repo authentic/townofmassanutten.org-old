@@ -1,0 +1,831 @@
+/* Admin stylesheet*/
+/* GENERAL STYLES ::: Body styles, Reset, Links, Headings, Other elements, tags
+-------------------------------------------------------------*/
+/* GENERAL STYLES :::  Reset
+---------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+    background: transparent;
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #e3dca3;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    line-height: 1.4286; /* Baseline grid of 20px */
+    text-align: center;
+}
+
+/* @end Reset*/
+/* @group Font sizes */
+/* basic font sizes */
+p, ul, ol, dl, table, address, blockquote, fieldset, pre, form div {
+    font-size: 1em; /* 14px */
+}
+
+/* deal with likely (but certainly not all) inherited shrinkage */
+
+ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, blockquote p, form div div, form div p, fieldset div, table form div {
+    font-size: 1em;
+}
+
+/* @end Font sizes */
+/* @group Margins */
+
+p, ul, ol, dl, address, table, blockquote, pre, fieldset {
+    margin-bottom: 1.4286em; /* 20px */
+}
+
+p {
+    margin: 0.8571em 0 1.4286em 0;
+}
+
+form {
+    margin-bottom: 1.517em; /* 18px */
+}
+
+ul ul, ol ol, ol ul, ul ol {
+    margin-bottom: 0;
+}
+
+/* @end Margins */
+/* @group Links */
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:link,
+a:visited {
+    color:#404528 ;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #09f;
+}
+
+
+/* @end Links */
+/* @group Headings */
+
+h1 {
+    font-size: 2.5714em; /* 36px */
+    line-height: 1; /* 36px */
+    margin-top: 0.111em; /*  5px */
+    margin-bottom: 1em; /* 36px */
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5em; /* 21px */
+    margin-bottom: 1em; /* 21px */
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1428em; /* 16px */
+    margin-bottom: 1em; /* 16px */
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cde;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* @end Headings */
+/* @group Lists */
+.prose ul, ul.bullets, ul.bullets ul {
+/* unordered lists more often DON'T require bullets except in extended bits of writing - use the .prose class or apply directly with .bullets */
+    list-style-type: disc;
+    margin-left: 1.2857em; /* 18px */
+}
+
+ol {
+/* ordered lists usually DO require bullets */
+    list-style-type: decimal;
+    margin-left: 1.9286em; /* 27px */
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1.2857em; /* 18px */
+}
+
+/* @end Lists */
+/* @group Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 0.6428em; /* 9px */
+    font-size: 1em; /* 14px */
+}
+
+thead th {
+    border: 1px solid #666;
+    border-bottom-width: 3px;
+    padding-top: 0;
+    padding-bottom: 0.6428em; /* 9px */
+    background-color: #ffffcc;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody tr th,
+tbody tr td {
+    border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.3571em 0.6428em 0.2857em 0.6428em; /* 5px 9px 4px 9px */
+}
+
+.list table {
+    clear: both;
+    width: 100%;
+}
+
+.list table tr td {
+    border: 1px solid #666666;
+}
+
+.show table {
+    clear: both;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.show table tr th {
+    white-space: nowrap;
+    padding-right: 5px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    padding-top: 0;
+    padding-bottom: 0.6428em; /* 9px */
+    text-align: center;
+    font-weight: bold;
+}
+
+.show table tr td {
+    border: 1px solid #666666;
+}
+
+.odd {
+    background: #ffcccc;
+}
+
+.even {
+    background: none;
+}
+
+/* @end Tables */
+/* @group Blockquotes */
+blockquote {
+    font-style: italic;
+    margin-left: 1.2857em; /* 18px */
+    margin-right: 1.2857em; /* 18px */
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+/* @end Blockquotes */
+/* @group Forms */
+/* @group Fieldsets */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 0 1.2857em 0.6428em 1.2857em; /* 0px 18px 9px 18px */
+    margin: 0 auto;
+    background: #f8f8f8;
+    width: 80%;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* @end Fieldsets */
+/* @group Labels */
+label {
+    cursor: pointer;
+}
+
+/* @end */
+/* @end Forms */
+/* @group Form controls */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: 1em;
+}
+
+textarea,
+input[type='text'],
+input[type='password'],
+select {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #ccc;
+    border-right-color: #ccc;
+    padding: 0 1px 1px 1px;
+}
+
+textarea {
+    width: 99%;
+    display: block;
+}
+
+a.button,
+button{
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+    background-color: #09f;
+    color: #fff;
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.1em 1.6em;
+    border-width: 2px;
+    border-style: solid;
+    border-top-color: #2bf;
+    border-right-color: #08e;
+    border-bottom-color: #07d;
+    border-left-color: #1af;
+    border-radius: 5px;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: #06c;
+    border-top-color: #28e;
+    border-right-color: #05b;
+    border-bottom-color: #04a;
+    border-left-color: #17d;
+}
+
+a.button:active {
+    background-color: #039;
+    border-top-color: #25b;
+    border-right-color: #14a;
+    border-bottom-color: #017;
+    border-left-color: #028;
+}
+
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active,
+a.button:focus
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* @end */
+/* @group Other elements */
+
+address {
+    font-style: normal;
+}
+
+pre, code, kbd, tt, samp, tt {
+    font-family: "andale mono", monospace;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: 0.7857em; /* 11px */
+}
+
+/* @end Other elements*/
+
+/* @end */
+
+/* @group Helper classes */
+
+/* @group form classes */
+
+form .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-bottom: 0.5em; /* 7px */
+}
+
+form .container label {
+    float: left;
+    width: 23.8095%;
+    text-align: right;
+    padding-top: 0.5em; /* 7px */
+    padding-bottom: 0.5em; /* 7px */
+}
+
+form .container input,
+form .container select,
+form .container textarea {
+    float: left;
+    width: 40.7407%;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em; /* 7px */
+    padding-bottom: 0.5em; /* 7px */
+}
+
+form .container textarea:focus,
+form .container input[type='text']:focus,
+form .container input[type='password']:focus,
+form .container select:focus {
+    border-color: #234;
+    background-color: #ffc;
+}
+
+form .container label em {
+    font-style: normal;
+    text-align: left;
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 0;
+    width: 28%;
+    background-color: #DEE658;
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+}
+
+form .button-container {
+    margin-left: 23.8095%;
+    padding-left: 1em;
+}
+
+form .button-container input[type='submit'] {
+    background-color: #09f;
+    color: #fff;
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid #2bf;
+    border-right-color: #08e;
+    border-bottom-color: #07d;
+    border-left-color: #1af;
+    border-radius: 5px;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+form .button-container input:hover,
+form .button-container input:focus {
+    background-color: #06c;
+    border-top-color: #28e;
+    border-right-color: #05b;
+    border-bottom-color: #04a;
+    border-left-color: #17d;
+}
+
+form .button-container button:active {
+    background-color: #039;
+    border-top-color: #25b;
+    border-right-color: #14a;
+    border-bottom-color: #017;
+    border-left-color: #028;
+}
+
+.multi-container label,
+.radio-container label,
+.checkbox-container label {
+    font-weight: normal;
+}
+
+.radio-container label,
+.checkbox-container label {
+    display: block;
+}
+
+.compact label {
+    display: inline;
+}
+
+input.short {
+    width: 4em;
+}
+
+input.medium,
+textarea.medium {
+    width: 12em;
+}
+
+input.long,
+textarea.long {
+    width: 30em;
+}
+
+button.link {
+    background-color: #fff;
+    font-weight: normal;
+}
+
+/* accessability feature, resize check and radio inputs */
+.radio-container input,
+.checkbox-container input {
+    width: 1em;
+    height: 1em;
+}
+
+.login,.edit form, .new form, .delete form {
+    margin: 1em auto;
+    border: none;
+    background-color: #e4f0ec;
+    clear: both;
+    padding: 1.0714em;
+    width:80%;
+}
+
+/* @end */
+/* @group clear */
+.clear {
+    clear: both;
+}
+
+/* @end */
+/* @group Notifications and errors*/
+.fieldWithErrors {
+}
+
+.fieldWithErrors label {
+    color: #AA0000;
+}
+
+.fieldWithErrors input {
+}
+
+#errorExplanation {
+    width: 400px;
+    padding: 0;
+    margin: 0 auto 1.5em;
+    border: 1px solid #AA0000;
+    background-color: #FFFFFF;
+    font-size: 12px;
+}
+
+#errorExplanation h2 {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 5px 5px 15px;
+    margin: 0;
+    width: 380px;
+    background-color: #AA0000;
+    color: #FFFFFF;
+}
+
+#errorExplanation p {
+    color: #333333;
+    margin: 0;
+    padding: 3px 0.5em;
+}
+
+#errorExplanation ul {
+    margin-top: 0;
+}
+
+#errorExplanation ul li {
+    list-style: square;
+    margin-left: 25px;
+}
+.notice{ font-style: normal;
+    text-align: left;
+    display: block;
+    width: 28%;
+    background-color: #DEE658;
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    height: 1.25em;
+    margin-bottom:0.4em;
+
+
+
+}
+
+.back-link {
+    margin: 1em;
+    display:block;
+}
+
+.pluralizenote {
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    width: 28%;
+    background-color: #ccffff;
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    height: 1.25em;
+    margin-bottom:0.4em;
+}
+.reference-name{font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    width: 28%;
+    background-color: #ffcc66;
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    height: 1.25em;
+    margin-bottom:0.4em;}
+
+.section + .section {
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    border-top: 1px dotted #666666;
+}
+
+.identity {
+
+ text-align: left;
+    display: block;
+    height: 1.25em;
+    position: relative;
+    right:0;
+    top: 0;
+    background-color:#9ed19f;
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+     width: 28%;
+     margin-bottom:0.4em;
+}
+
+span.status {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0.25em auto;
+    padding: 0;
+    border: 1px solid #000000;
+}
+
+span.status.true {
+    background: green;
+    color: green;
+}
+
+span.status.false {
+    background: red;
+    color: red;
+}
+
+
+/* @end Notifications and errors */
+/* @group banner */
+.banner {
+    background-color: #24344A;
+    color: #fff;
+    width: 100%;
+    margin-left: -1.0714em; /* 15px */
+    padding-left: 1.0714em; /* 15px */
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+}
+
+h2.banner {
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    margin-left: -0.7143em; /* 15px */
+    padding: 0.25em 0 0.25em 0.7143em;
+    text-transform: uppercase;
+}
+
+h3.banner {
+    margin-right: -0.9375em; /* 15px */
+    padding: 0.25em 0 0.25em 0.9375em;
+}
+
+/* @end */
+/* @group photo */
+.photo {
+    background-color: #fff;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
+}
+
+/* @end */
+
+.smallcaps {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+/* @end */
+/*PAGE STRUCTURE ::: Layout*/
+#wrapper {
+    width: 90%;
+    min-width: 760px;
+    max-width: 90em;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#primary {
+    background: transparent;
+    width: 100%;
+    min-height: 350px;
+}
+
+#content {
+    min-height: 350px;
+    margin:0;
+    background:#fff;
+    padding:0.5em;
+}
+
+
+.list h2, .edit h2, .show h2, .new h2, .delete h2 {color: #404528; display: block; text-align: center; text-transform: uppercase;
+}
+
+/* @group Header */
+#header {
+    background: #e7eded url('/images/bg.jpg') repeat-x;
+    padding-left: 10px;
+    color:#fff;
+}
+
+#header p {
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* @end Header */
+/* @group Nav */
+
+.nav {text-transform: uppercase;
+    width:30%;
+    margin:0.5em auto;
+    text-align:center;
+    }
+.nav ul{}
+
+.nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: block;
+    border: 1px solid #999999;
+    margin: 0.3em;
+    padding-right: 1em;
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    font-size: 1.2857em; /* 18px */
+    background: #a16235;
+}
+
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li a:link,
+.nav li a:visited {
+    color:#DEE658;
+}
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:active {
+    color: #09f;
+}
+
+/* @end */
+/* @group Footer */
+footer {
+    padding: 10px 0;
+    background: #cee2f4;
+    color: #999999;
+    position: relative;
+    clear: both;
+    font-size: 90%;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5em 1em;
+
+}
+
+footer ol li {
+    display: inline;
+    margin-right: 1em;
+    padding-right: 1em;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    text-decoration: underline;
+}
+
+/* @end Footer */
+
+/* @end */
+
+/* @group Page components */
+
+
+/* @end */
+
