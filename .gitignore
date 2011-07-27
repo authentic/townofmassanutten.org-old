@@ -10,5 +10,6 @@ doc/
 .DS_Store
  config/database.yml
  config/deploy.rb
+ config/mongrel_cluster.rb
 .idea
 spec
