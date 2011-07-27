@@ -1,7 +1,0 @@
---- 
-port: 8000-a
-servers: 2
-pid_file: tmp/pids/mongrel.pid
-log_file: log/mongrel.log
-environment: production
-cwd: /home/olga/websites/townofmassanutten.org
