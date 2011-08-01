@@ -1,6 +1,6 @@
 class AccessController < ApplicationController
   layout 'admin'
-  before_filter :confirm_logged_in, :except =>[:login, :attempt_login, :logout]
+  #before_filter :confirm_logged_in, :except =>[:login, :attempt_login, :logout]
 
   def index
     menu
