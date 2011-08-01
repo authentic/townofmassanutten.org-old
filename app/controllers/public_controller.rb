@@ -9,7 +9,7 @@ class PublicController < ApplicationController
   def show
 
     @page=Page.where(:permalink=>params[:id], :visible => true).first
-    redirect_to(:action => 'index') unless @page
+    redirect_to(:controller => "home", :action => 'index') unless @page
 
   end
 

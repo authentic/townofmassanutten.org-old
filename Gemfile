@@ -11,6 +11,7 @@ gem 'simple-navigation'
 gem 'ckeditor', '3.5.4'
 gem 'paperclip', '2.3.15'
 gem 'mongrel', '1.2.0.pre2'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
 end
@@ -18,6 +19,10 @@ group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat'
 end
+#group :production do
+#    gem 'daemons', '1.1.0'
+#end
+
 # Use unicorn as the web server
 
 # Deploy with Capistrano
