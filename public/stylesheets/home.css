@@ -1,10 +1,12 @@
 body {
-    background-color: #ffffff;
-    background-position: bottom;
-    background-image: url('/images/bg2.png');
-    color: #333;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:top center;
+    background-color: #f0f2f1;
+    background-image: url('/images/homepageBG.jpg');
+    color: #bb133e;
+    font-family:"Times New Roman", Georgia, serif;
+    font-size: 100%;
     line-height: 1.5;
     padding-top: 20px;
 }
@@ -13,9 +15,74 @@ body {
     width: 90%;
     min-width: 1006px;
     max-width: 1260px;
-    text-align: left;
+    text-align:center;
     margin: 0 auto;
-    background-color: #ffffff;
-
+    background-color: transparent;
     height: 100%;
+}
+ .container h1{
+font-weight: bold;
+     color: #86110a;
+     font-size: 325%;
+
+ }
+.container h2{
+font-weight: bold;
+     color: #86110a;
+ }
+.container h3{
+font-weight: bolder;
+     color: #86110a;
+    font-style: italic;
+
+ }
+a.button,
+button{
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+    background-color: #09f;
+    color: #fff;
+    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.3em 1.6em;
+    margin-right: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-top-color: #2bf;
+    border-right-color: #08e;
+    border-bottom-color: #07d;
+    border-left-color: #1af;
+    border-radius: 5px;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: #06c;
+    border-top-color: #28e;
+    border-right-color: #05b;
+    border-bottom-color: #04a;
+    border-left-color: #17d;
+}
+
+a.button:active {
+    background-color: #039;
+    border-top-color: #25b;
+    border-right-color: #14a;
+    border-bottom-color: #017;
+    border-left-color: #028;
+}
+
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active,
+a.button:focus
+{
+    color: #f1f934;
+    text-decoration: none;
 }

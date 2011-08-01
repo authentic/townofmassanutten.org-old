@@ -1,8 +1,8 @@
-html{}
-
+html {
+}
+     .submenu{float: right; clear: both;
+   }
 body {
-
-
 
     background-color: #ffffff;
     background-position: bottom;
@@ -10,8 +10,8 @@ body {
     color: #333;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 87.5%;
-   line-height: 1.5;
-     padding-top: 20px;
+    line-height: 1.5;
+    padding-top: 4px;
 }
 
 /*PAGE STRUCTURE ::: Layout*/
@@ -21,11 +21,10 @@ body {
     max-width: 1260px;
     text-align: left;
     margin: 0 auto;
-    background-color: #ffffff;
-    
+    background-color: transparent;
+
     height: 100%;
 }
-
 
 /* @group Header */
 header {
@@ -34,7 +33,7 @@ header {
     margin: 0;
     height: 100px;
     width: 100%;
-   text-align: center;
+    text-align: center;
 }
 
 header p {
@@ -88,17 +87,20 @@ header p {
 
 #content h2 {
     font-style: normal;
+    padding: 0 10px 10px 10px;
     text-align: left;
     display: block;
-    width: 50%;
-    background-color: #DEE658;
+    width: 100%;
+    background-color: #AFDBA3;
     border: 1px solid #fff;
-    padding: 0.5em 1em;
     -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
     -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
     box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
     height: 1.25em;
     margin-bottom: 0.4em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 #sidebar2 {
@@ -120,82 +122,84 @@ header p {
 
 /* @group Nav */
 nav, nav ul, nav ul li, nav ul ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
 }
 
 nav {
     width: 200px;
-    height: 246px;
-    background-image: url('/images/massanutten-bear-bg.jpg');
+    /* background-image: url('/images/massanutten-bear-bg.jpg'); */
     background-repeat: repeat-y;
-
 }
 
 nav ul {
-
     list-style: none;
     position: relative;
     float: left;
-
 }
 
 nav ul li {
-    padding: 8px 0;
-    position: relative;
-    z-index: 3;
-    text-transform: uppercase;
+    padding: 3px 0;
 }
 
 nav ul li a, nav li a.selected {
-    padding: 0px 0px 2px 15px;
-    color: rgb(0, 0, 0);
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-    white-space: nowrap;
+    /* padding: 0px 0px 2px 15px;
+   color: rgb(0, 0, 0);
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-decoration: none;
+   display: block;
+   white-space: nowrap;*/
 }
 
 nav ul ul {
-    background: #e2b490;
-    border: 1px solid #92624b;
-    left: 100%;
-    top: 1px;
-    width: 200px;
-    display: none;
-    position: absolute;
-    -moz-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
-
+    /* background: #e2b490;
+        border: 1px solid #92624b;
+        left: 100%;
+        top: 1px;
+        width: 200px;
+        display: none;
+        position: absolute;
+        -moz-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    */
 }
 
 nav ul ul li {
-    padding: 8px 0px 6px;
-    border-right: 0px none;
-    float: none;
+    /* padding: 8px 0px 6px;
+   border-right: 0px none;
+   float: none;*/
 
 }
 
 nav ul ul li a {
-    color: #660000 !important;
+    /*color: #660000 !important;
     border-right: 0px none;
     white-space: normal;
-    text-shadow: 0 1px 1px #343434;
+    text-shadow: 0 1px 1px #343434;*/
 
 }
 
 nav ul ul li:hover {
-    background: #dda071;
+
 }
 
 nav ul ul li.selected {
-    background: #dda071;
+    background: #AFDBA3;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+nav ul li.selected {
+    background: #CEE2F4;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 nav ul li:hover ul, nav ul li:hover.selected ul {
-    display: block;
+    /* display: block;*/
 }
 
 nav li a:hover,
@@ -301,8 +305,20 @@ h3.banner {
 
 /* @end */
 /* @group photo */
-#picture_month{margin-top:10px; width: 200px;height:300px; text-align:center; }
-#picture_month h4{font-style:italic; font-weight:bold; color: #993300; text-transform:uppercase;}
+#picture_month {
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+#picture_month h4 {
+    font-style: italic;
+    font-weight: bold;
+    color: #993300;
+    text-transform: uppercase;
+}
+
 .photo {
     background-color: #fff;
     border: 5px solid #fff;
@@ -320,19 +336,19 @@ h3.banner {
 /* ~~miscellaneous float/clear classes~~ */
 
 .fltrt {
-/* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+    /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
     float: right;
     margin-left: 8px;
 }
 
 .fltlft {
-/* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+    /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
     float: left;
     margin-right: 8px;
 }
 
 .clearfloat {
-/* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+    /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
     clear: both;
     height: 0;
     font-size: 1px;

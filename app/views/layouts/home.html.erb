@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Town Incorporation Of Massanutten : <%= @page_title || '' %> </title>
+  <%= csrf_meta_tag %>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+  <meta name="description" content="This website reports on the feasibility of incorporating the community of Massanutten, Virginia into town. The website is designed to provide information on what town incorporation in Virginia is all about and what Massanutten would look like if it became a town to include community, infrastructure, law enforcement, parks, government, and budget aspects"/>
+  <meta name="keywords" content="massanutten,virginia,incorporation,town,boundaries,town map,community,infrastructure,town police,law enforcement,town government,town administration,town budget"/>
+  <meta name="author" content="Gene Hauze">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=8" />-->
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+  <meta name="robots" content="index, nofollow"/>
+  <meta name="robots" content="noarchive"/>
+  <%= render 'layouts/stylesheets' %>
+  <%= stylesheet_link_tag('home', :media=>'screen') %>
+</head>
+
+<body>
+<div class="container">
+  <div id="content">
+    <section>
+      <%= yield %></section>
+    <!-- end #content --></div>
+  <!-- end container --></div>
+</body>
+</html>

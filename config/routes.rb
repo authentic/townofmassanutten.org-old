@@ -1,5 +1,7 @@
 TownofmassanuttenOrg::Application.routes.draw do
-  root :to => "public#index"
+  get "home/index"
+
+  root :to => "home#index"
   match 'admin', :to=> 'access#menu'
    match 'show/:id', :to => 'public#show'
 

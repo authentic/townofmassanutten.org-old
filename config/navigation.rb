@@ -44,18 +44,62 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            when the item should be highlighted, you can set a regexp which is matched
     #                            against the current URI.
     #
-  #  primary.item :key_1, 'name', url, options
-
-    # Add an item which has a sub navigation (same params, but with block)
-  #  primary.item :key_2, 'name', url, options do |sub_nav|
+   primary.item :introduction, 'Introduction', '/show/introduction' do |sub_nav|
       # Add an item to the sub navigation (same params again)
- #     sub_nav.item :key_2_1, 'name', url, options
-#    end
+      sub_nav.item :background, 'Background','/show/background'
+      sub_nav.item :history, 'History','/show/history'
+      sub_nav.item :massanutten_area, 'Massanutten Area','/show/massanutten_area'
+      sub_nav.item :why_incorporate_now, 'Why Incorporate Now','/show/why_incorporate_now'
+      sub_nav.item :section_I_references, 'References','/show/section_I_references'
+    end
+  primary.item :mpoa_government, 'MPOA Government', '/show/mpoa_government' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :administration, 'Administration','/show/administration'
+      sub_nav.item :board_of_directors, 'Board of Directors','/show/board_of_directors'
+      sub_nav.item :committees, 'Committees','/show/committees'
+      sub_nav.item :governing_documentation, 'Governing Documents','/show/governing_documentation'
+      sub_nav.item :applications_forms, 'Applications & Forms','/show/applications_forms'
+      sub_nav.item :documents_library, 'Document Library','/show/documents_library'
+  end
+      primary.item :parks_recreation, 'Parks & Recreation', '/show/parks_recreation' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :electric_go_kart_track, 'Go-Kart Track','/show/electric_go_kart_track'
+      sub_nav.item :miniature_golf, 'Miniature Golf','/show/miniature_golf'
+      sub_nav.item :bungee_dome, 'Bungee Dome','/show/bungee_dome'
+      sub_nav.item :pool_area, 'Pool Area','/show/pool_area'
+      sub_nav.item :hopkins_park, 'Hopkins Park','/show/hopkins_park'
+      sub_nav.item :rockingham_springs_arboretum, 'Arboretum','/show/rockingham_springs_arboretum'
+      sub_nav.item :painters_pond, 'Painters Pond','/show/painters_pond'
+      end
+    primary.item :massanutten_police, 'Massanutten Police', '/show/massanutten_police' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :mission, 'Mission','/show/mission'
+      sub_nav.item :safety, 'Safety','/show/safety'
+      sub_nav.item :personnel, 'Personnel','/show/personnel'
+      sub_nav.item :training, 'Training','/show/training'
+      sub_nav.item :important_phone_numbers, 'Important Numbers','/show/important_phone_numbers'
+      sub_nav.item :police_applications_forms, 'Applications & Forms','/show/police_applications_forms'
+    end
+    primary.item :mpoa_rentals, 'MPOA Rentals', '/show/mpoa_rentals'
+    primary.item :mpoa_members_info, 'MPOA Members Info', '/show/mpoa_members_info' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :administration_services, 'Administrative Services','/show/administration_services'
+      sub_nav.item :calendar_of_events, 'Calendar of Events','/show/calendar_of_events'
+      sub_nav.item :members_special_events, 'Special Events','/show/members_special_events'
+      sub_nav.item :serving_mpoa, 'Serving MPOA','/show/serving_mpoa'
+      sub_nav.item :discount_coupons, 'Discount Coupons','/show/discount_coupons'
 
-    # You can also specify a condition-proc that needs to be fullfilled to display an item.
-    # Conditions are part of the options. They are evaluated in the context of the views,
-    # thus you can use all the methods and vars you have available in the views.
-#    primary.item :key_3, 'Admin', url, :class => 'special', :if => Proc.new { current_user.admin? }
+    end
+    primary.item :contact_us, 'Contact Us', '/show/contact_us' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :mpoa_board, 'Board of Directors','/show/mpoa_board'
+      sub_nav.item :mpoa_administrator, 'Administrator','/show/mpoa_administrator'
+      sub_nav.item :mpoa_police_chief, 'Police Chief','/show/mpoa_police_chief'
+      sub_nav.item :mpoa_maintenance_foreman, 'Maintenance Foreman','/show/mpoa_maintenance_foreman'
+      sub_nav.item :mpoa_webmaster, 'Webmaster','/show/mpoa_webmaster'
+ sub_nav.item :local_numbers_of_interest, 'Numbers of Interest','/show/local_numbers_of_interest'
+       sub_nav.item :employment_opportunities, 'Employment','/show/employment_opportunities'
+    end
 #
     # you can also specify a css id or class to attach to this particular level
     # works for all levels of the menu

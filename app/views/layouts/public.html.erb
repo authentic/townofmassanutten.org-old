@@ -17,12 +17,15 @@
 
 <body>
 <div class="container">
+  <div class="submenu">
+             <%= image_tag('home.png', :alt=>"Home", :class =>"round") %></div>
+  <div class="clearfloat"></div>
   <%= render 'layouts/header' %>
 
   <div class="round" id="sidebar1">
   
     <nav>
-      <%= render_navigation :level => 1..2, :expand_all => true %>
+      <%= render_navigation :level => 1..2 %>
 
       <!-- end nav --></nav>
 
