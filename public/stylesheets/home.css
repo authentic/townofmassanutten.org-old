@@ -1,0 +1,21 @@
+body {
+    background-color: #ffffff;
+    background-position: bottom;
+    background-image: url('/images/bg2.png');
+    color: #333;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+.container {
+    width: 90%;
+    min-width: 1006px;
+    max-width: 1260px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+    height: 100%;
+}
