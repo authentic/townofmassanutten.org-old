@@ -10,10 +10,11 @@ gem 'mysql2','< 0.3'
 gem 'simple-navigation'
 gem 'ckeditor', '3.5.4'
 gem 'paperclip', '2.3.15'
-gem 'mongrel', '1.2.0.pre2'
+
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'mongrel', '1.2.0.pre2'
 end
 group :test do
   gem 'rspec-rails', '2.6.1'
