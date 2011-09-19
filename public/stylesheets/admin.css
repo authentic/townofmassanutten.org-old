@@ -1,164 +1,4 @@
-/* Admin stylesheet*/
-/* GENERAL STYLES ::: Body styles, Reset, Links, Headings, Other elements, tags
--------------------------------------------------------------*/
-/* GENERAL STYLES :::  Reset
----------------------------------------------------------*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    outline: 0;
-    background: transparent;
-    text-decoration: none;
-}
 
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    margin: 0 auto;
-    background-color: #e3dca3;
-    background-position: bottom;
-    background-repeat: repeat-x;
-    color: #333;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
-    line-height: 1.4286; /* Baseline grid of 20px */
-    text-align: center;
-}
-
-/* @end Reset*/
-/* @group Font sizes */
-/* basic font sizes */
-p, ul, ol, dl, table, address, blockquote, fieldset, pre, form div {
-    font-size: 1em; /* 14px */
-}
-
-/* deal with likely (but certainly not all) inherited shrinkage */
-
-ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, blockquote p, form div div, form div p, fieldset div, table form div {
-    font-size: 1em;
-}
-
-/* @end Font sizes */
-/* @group Margins */
-
-p, ul, ol, dl, address, table, blockquote, pre, fieldset {
-    margin-bottom: 1.4286em; /* 20px */
-}
-
-p {
-    margin: 0.8571em 0 1.4286em 0;
-}
-
-form {
-    margin-bottom: 1.517em; /* 18px */
-}
-
-ul ul, ol ol, ol ul, ul ol {
-    margin-bottom: 0;
-}
-
-/* @end Margins */
-/* @group Links */
-
-a {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-a:link,
-a:visited {
-    color:#404528 ;
-}
-
-a:hover,
-a:focus,
-a:active {
-    color: #09f;
-}
-
-
-/* @end Links */
-/* @group Headings */
-
-h1 {
-    font-size: 2.5714em; /* 36px */
-    line-height: 1; /* 36px */
-    margin-top: 0.111em; /*  5px */
-    margin-bottom: 1em; /* 36px */
-    font-weight: 500;
-}
-
-h2 {
-    font-size: 1.5em; /* 21px */
-    margin-bottom: 1em; /* 21px */
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1.1428em; /* 16px */
-    margin-bottom: 1em; /* 16px */
-    font-weight: bold;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cde;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/* @end Headings */
-/* @group Lists */
-.prose ul, ul.bullets, ul.bullets ul {
-/* unordered lists more often DON'T require bullets except in extended bits of writing - use the .prose class or apply directly with .bullets */
-    list-style-type: disc;
-    margin-left: 1.2857em; /* 18px */
-}
-
-ol {
-/* ordered lists usually DO require bullets */
-    list-style-type: decimal;
-    margin-left: 1.9286em; /* 27px */
-}
-
-dt {
-    font-weight: bold;
-    margin-top: 1.2857em; /* 18px */
-}
-
-/* @end Lists */
 /* @group Tables */
 table {
     margin-left: auto;
@@ -176,7 +16,7 @@ thead th {
     border-bottom-width: 3px;
     padding-top: 0;
     padding-bottom: 0.6428em; /* 9px */
-    background-color: #ffffcc;
+    background-color: #ffe8cc;
     text-align: center;
     font-weight: bold;
 }
@@ -308,7 +148,7 @@ button{
     text-transform: uppercase;
     text-align: center;
     padding: 0.1em 1.6em;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-top-color: #2bf;
     border-right-color: #08e;
@@ -733,7 +573,7 @@ h3.banner {
 
 /* @group Header */
 #header {
-    background: #e7eded url('/images/bg.jpg') repeat-x;
+    background: #e7eded;
     padding-left: 10px;
     color:#fff;
 }
@@ -822,10 +662,4 @@ footer a:active {
 
 /* @end Footer */
 
-/* @end */
-
-/* @group Page components */
-
-
-/* @end */
-
+/

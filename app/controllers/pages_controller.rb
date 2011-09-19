@@ -3,13 +3,16 @@ class PagesController < ApplicationController
   before_filter :confirm_logged_in
   before_filter :find_subject
 
+
   def index
     list
     render('list')
+
   end
 
   def list
     @pages = Page.sorted.where(:subject_id => @subject.id)
+
   end
 
   def show
@@ -87,5 +90,8 @@ class PagesController < ApplicationController
       @subject = Subject.find_by_id(params[:subject_id])
     end
   end
+
+
+
 
 end

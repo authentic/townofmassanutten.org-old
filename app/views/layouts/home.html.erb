@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Town Incorporation Of Massanutten : <%= @page_title || '' %> </title>
+  <title>Town Incorporation Of Massanutten</title>
   <%= csrf_meta_tag %>
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
   <meta name="description" content="This website reports on the feasibility of incorporating the community of Massanutten, Virginia into town. The website is designed to provide information on what town incorporation in Virginia is all about and what Massanutten would look like if it became a town to include community, infrastructure, law enforcement, parks, government, and budget aspects"/>
@@ -13,14 +13,27 @@
   <meta name="robots" content="noarchive"/>
   <%= render 'layouts/stylesheets' %>
   <%= stylesheet_link_tag('home', :media=>'screen') %>
-</head>
+  <script language="javascript">
+      $(function() {
+          // We create rounded corners for all divisions that have the attribute "box".
+          $("[box]").corner("8px");
+          $('div.inner').corner("round 8px");
+          $('div.outer').corner("10px");
 
+      });
+  </script>
+</head>
 <body>
-<div class="container">
-  <div id="content">
-    <section>
-      <%= yield %></section>
-    <!-- end #content --></div>
+<div class="container border1" box="yes">
+  <div class="span-24 last">
+    <div class="span-24 content last">  <%= yield %></div>
+    <div class="homeNav span-22 prepend-3">
+      <div class="span-4 large greenbox" box="yes"><%= link_to("View Final Report", {:controller => 'public', :action=>'show', :id =>"forward"}, :class=>'navlink') %></div>
+      <div class="span-4 large greenbox" box="yes"><%= link_to("View Study Videos", {:action=>'#'}, :class=>'navlink') %></div>
+      <div class="span-4 large greenbox" box="yes"><%= link_to("Print Final Report", {:action=>'#'}, :class=>'navlink') %></div>
+      <div class="span-4 large last greenbox" box="yes"><%= link_to("Print Summary", {:action=>'#'}, :class=>'navlink') %></div>
+    </div>
+  </div>
   <!-- end container --></div>
 </body>
 </html>

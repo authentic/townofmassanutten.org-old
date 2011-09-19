@@ -1,15 +1,16 @@
 TownofmassanuttenOrg::Application.routes.draw do
-  get "home/index"
+
 
   root :to => "home#index"
   match 'admin', :to=> 'access#menu'
    match 'show/:id', :to => 'public#show'
 
-    
-  namespace :ckeditor do
-     resources :pictures, :only => [:index, :create, :destroy]
-     resources :attachment_files, :only => [:index, :create, :destroy]
-   end
+Rails.application.routes.draw do
+  namespace :ckeditor, :only => [:index, :create, :destroy] do
+    resources :pictures
+    resources :attachment_files
+  end
+end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Town Incorporation Of Massanutten : <%= @page_title || '' %> </title>
+  <%= csrf_meta_tag %>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+  <meta name="description" content="This website reports on the feasibility of incorporating the community of Massanutten, Virginia into town. The website is designed to provide information on what town incorporation in Virginia is all about and what Massanutten would look like if it became a town to include community, infrastructure, law enforcement, parks, government, and budget aspects"/>
+  <meta name="keywords" content="massanutten,virginia,incorporation,town,boundaries,town map,community,infrastructure,town police,law enforcement,town government,town administration,town budget"/>
+  <meta name="author" content="Gene Hauze">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=8" />--->
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+  <meta name="robots" content="index, nofollow"/>
+  <meta name="robots" content="noarchive"/>
+  <%= render 'layouts/stylesheets' %>
+  <%= stylesheet_link_tag('public', :media=>'screen') %>
+  <script language="javascript">
+      $(function() {
+          // We create rounded corners for all divisions that have the attribute "box".
+          $("[box]").corner("top 8px");
+          $('div.inner').corner("round 8px");
+          $('div.outer').corner("bottom 8px");
+
+      });
+  </script>
+
+</head>
+
+<body>
+<div class="container">
+  <%= render 'layouts/header' %>
+
+  <div class="content span-24 last">   <hr class="space">
+    <div class="span-4">
+
+      <nav id="mainNav">
+        <%= render_navigation :level => 1..2, :expand_all => true %>
+
+        <!-- end nav --></nav> <hr>
+      <div class="banner inner">Video</div><hr class="space" >
+         <div class="banner inner">Print Report</div>
+      <hr class="space" >
+         <div class="banner inner">Print Summary</div> <hr class="space" >
+    </div>
+
+
+    <div class="span-18 prepend-1 last">
+      <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt;&gt; " %> <hr>
+      <%= yield %> <hr class="space"></div>
+
+  </div>
+
+
+  <%= render 'layouts/footer' %>
+
+
+</div>
+
+</body>
+</html>

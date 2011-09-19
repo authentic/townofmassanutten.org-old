@@ -1,12 +1,8 @@
 en:
   ckeditor:
     page_title: "CKEditor Files Manager"
-    upload_files: "Upload New Files"
+    confirm_delete: "Delete file?"
     buttons:
       cancel: "Cancel"
-      refresh:
-        title: "Refresh"
-        hint: "Refresh page"
-      upload:
-        title: "Upload"
-        hint: "Upload New File"
+      upload: "Upload"
+      delete: "Delete"

@@ -44,6 +44,25 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            when the item should be highlighted, you can set a regexp which is matched
     #                            against the current URI.
     #
+    #
+
+    primary.item :forward, 'Forward', '/show/forward'
+    primary.item :acknowledgements, 'Acknowledgements', '/show/acknowledgements'
+
+
+    primary.item :executive_summary, 'Summary', '/show/executive_summary' do |sub_nav|
+      sub_nav.item :ex_sum_forward, 'Forward','/show/ex_sum_forward'
+      sub_nav.item :ex_sum_acknowledgements, 'Acknowledgements','/show/ex_sum_acknowledgements'
+      sub_nav.item :ex_sum_introduction, 'Introduction','/show/ex_sum_introduction'
+      sub_nav.item :ex_sum_incorporation, 'Incorporation','/show/ex_sum_incorporation'
+      sub_nav.item :ex_sum_boundaries, 'Town Boundaries','/show/ex_sum_boundaries'
+      sub_nav.item :ex_sum_services, 'Town Services','/show/ex_sum_services'
+      sub_nav.item :ex_sum_government, 'Town Government','/show/ex_sum_government'
+      sub_nav.item :ex_sum_budget, 'Town Budget','/show/ex_sum_budget'
+      sub_nav.item :ex_sum_considerations, 'Considerations','/show/ex_sum_considerations'
+
+    end
+
    primary.item :introduction, 'Introduction', '/show/introduction' do |sub_nav|
       # Add an item to the sub navigation (same params again)
       sub_nav.item :background, 'Background','/show/background'
@@ -52,54 +71,94 @@ SimpleNavigation::Configuration.run do |navigation|
       sub_nav.item :why_incorporate_now, 'Why Incorporate Now','/show/why_incorporate_now'
       sub_nav.item :section_I_references, 'References','/show/section_I_references'
     end
-  primary.item :mpoa_government, 'MPOA Government', '/show/mpoa_government' do |sub_nav|
+  primary.item :incorporation, 'Incorporation', '/show/incorporation' do |sub_nav|
       # Add an item to the sub navigation (same params again)
-      sub_nav.item :administration, 'Administration','/show/administration'
-      sub_nav.item :board_of_directors, 'Board of Directors','/show/board_of_directors'
-      sub_nav.item :committees, 'Committees','/show/committees'
-      sub_nav.item :governing_documentation, 'Governing Documents','/show/governing_documentation'
-      sub_nav.item :applications_forms, 'Applications & Forms','/show/applications_forms'
-      sub_nav.item :documents_library, 'Document Library','/show/documents_library'
+      sub_nav.item :how_to_incorporate, 'How to Incorporate','/show/how_to_incorporate'
+      sub_nav.item :general_assembly, 'General Assembly','/show/general_assembly'
+      sub_nav.item :judicial_proceedings, 'Judicial Proceedings','/show/judicial_proceedings'
+      sub_nav.item :commission_of_local_government, 'Commission of Local Government','/show/commission_of_local_government'
+      sub_nav.item :town_chartering, 'Town Chartering','/show/town_chartering'
+      sub_nav.item :timeline, 'Timeline','/show/timeline'
+      sub_nav.item :section_II_faq, 'FAQ','/show/section_II_faq'
+      sub_nav.item :section_II_references, 'References','/show/section_II_references'
   end
-      primary.item :parks_recreation, 'Parks & Recreation', '/show/parks_recreation' do |sub_nav|
+      primary.item :community, 'Community', '/show/community' do |sub_nav|
       # Add an item to the sub navigation (same params again)
-      sub_nav.item :electric_go_kart_track, 'Go-Kart Track','/show/electric_go_kart_track'
-      sub_nav.item :miniature_golf, 'Miniature Golf','/show/miniature_golf'
-      sub_nav.item :bungee_dome, 'Bungee Dome','/show/bungee_dome'
-      sub_nav.item :pool_area, 'Pool Area','/show/pool_area'
-      sub_nav.item :hopkins_park, 'Hopkins Park','/show/hopkins_park'
-      sub_nav.item :rockingham_springs_arboretum, 'Arboretum','/show/rockingham_springs_arboretum'
-      sub_nav.item :painters_pond, 'Painters Pond','/show/painters_pond'
+      sub_nav.item :massanutten_community, 'Massanutten Community','/show/massanutten_community'
+      sub_nav.item :massanutten_village, 'Massanutten Village','/show/massanutten_village'
+      sub_nav.item :relevant_maps, 'Relevant Maps','/show/relevant_maps'
+      sub_nav.item :town_map, 'Town Map','/show/town_map'
+      sub_nav.item :town_details, 'Town Details','/show/town_details'
+      sub_nav.item :local_towns, 'Local Towns','/show/local_towns'
+      sub_nav.item :section_III_faq, 'FAQ','/show/section_III_faq'
+      sub_nav.item :section_III_references, 'References','/show/section_III_references'
       end
-    primary.item :massanutten_police, 'Massanutten Police', '/show/massanutten_police' do |sub_nav|
+    primary.item :infrastructure, 'Infrastructure', '/show/infrastructure' do |sub_nav|
       # Add an item to the sub navigation (same params again)
-      sub_nav.item :mission, 'Mission','/show/mission'
-      sub_nav.item :safety, 'Safety','/show/safety'
-      sub_nav.item :personnel, 'Personnel','/show/personnel'
-      sub_nav.item :training, 'Training','/show/training'
-      sub_nav.item :important_phone_numbers, 'Important Numbers','/show/important_phone_numbers'
-      sub_nav.item :police_applications_forms, 'Applications & Forms','/show/police_applications_forms'
+      sub_nav.item :existing_infrastructure, 'Existing Infrastructure','/show/existing_infrastructure'
+      sub_nav.item :massanutten_roads, 'Massanutten Roads','/show/massanutten_roads'
+      sub_nav.item :town_roads, 'Town Roads','/show/town_roads'
+      sub_nav.item :road_grants, 'Road Grants','/show/road_grants'
+      sub_nav.item :local_towns_infrastructure, 'Local Towns','/show/local_towns_infrastructure'
+      sub_nav.item :section_IV_faq, 'FAQ','/show/section_IV_faq'
+      sub_nav.item :section_IV_references, 'References','/show/section_IV_references'
     end
-    primary.item :mpoa_rentals, 'MPOA Rentals', '/show/mpoa_rentals'
-    primary.item :mpoa_members_info, 'MPOA Members Info', '/show/mpoa_members_info' do |sub_nav|
+
+    primary.item :law_enforcement, 'Law Enforcement', '/show/law_enforcement' do |sub_nav|
       # Add an item to the sub navigation (same params again)
-      sub_nav.item :administration_services, 'Administrative Services','/show/administration_services'
-      sub_nav.item :calendar_of_events, 'Calendar of Events','/show/calendar_of_events'
-      sub_nav.item :members_special_events, 'Special Events','/show/members_special_events'
-      sub_nav.item :serving_mpoa, 'Serving MPOA','/show/serving_mpoa'
-      sub_nav.item :discount_coupons, 'Discount Coupons','/show/discount_coupons'
+      sub_nav.item :existing_security, 'Existing Security','/show/existing_security'
+      sub_nav.item :special_conservators, 'Special Conservators','/show/special_conservators'
+      sub_nav.item :town_police, 'Town Police','/show/town_police'
+      sub_nav.item :police_grants, 'Police Grants','/show/police_grants'
+      sub_nav.item :local_towns_law_enforcement, 'Local Towns','/show/local_towns_law_enforcement'
+      sub_nav.item :section_V_faq, 'FAQ','/show/section_V_faq'
+      sub_nav.item :section_V_references, 'References','/show/section_V_references'
 
     end
-    primary.item :contact_us, 'Contact Us', '/show/contact_us' do |sub_nav|
+    primary.item :parks_and_recreation, 'Parks & Recreation', '/show/parks_and_recreation' do |sub_nav|
       # Add an item to the sub navigation (same params again)
-      sub_nav.item :mpoa_board, 'Board of Directors','/show/mpoa_board'
-      sub_nav.item :mpoa_administrator, 'Administrator','/show/mpoa_administrator'
-      sub_nav.item :mpoa_police_chief, 'Police Chief','/show/mpoa_police_chief'
-      sub_nav.item :mpoa_maintenance_foreman, 'Maintenance Foreman','/show/mpoa_maintenance_foreman'
-      sub_nav.item :mpoa_webmaster, 'Webmaster','/show/mpoa_webmaster'
- sub_nav.item :local_numbers_of_interest, 'Numbers of Interest','/show/local_numbers_of_interest'
-       sub_nav.item :employment_opportunities, 'Employment','/show/employment_opportunities'
+      sub_nav.item :existing_parks_and_recreation, 'Existing Parks & Recreation','/show/existing_parks_and_recreation'
+      sub_nav.item :mpoa_parks_and_recreation, 'MPOA Parks & Recreation','/show/mpoa_parks_and_recreation'
+      sub_nav.item :town_parks_and_recreation, 'Town Parks & Recreation','/show/town_parks_and_recreation'
+      sub_nav.item :parks_and_recreation_assistance, 'Parks & Recreation Assistance','/show/parks_and_recreation_assistance'
+      sub_nav.item :local_towns_parks_and_recreation, 'Local Towns','/show/local_towns_parks_and_recreation'
+      sub_nav.item :section_VI_faq, 'FAQ','/show/section_VI_faq'
+      sub_nav.item :section_VI_references, 'References','/show/section_VI_references'
     end
+     primary.item :government, 'Government', '/show/government' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :existing_government, 'Existing Government','/show/existing_government'
+      sub_nav.item :rockingham_county_government, 'County Government','/show/rockingham_county_government'
+      sub_nav.item :town_government, 'Town Government','/show/town_government'
+      sub_nav.item :town_administration, 'Town Administration','/show/town_administration'
+      sub_nav.item :local_towns_government, 'Local Towns','/show/local_towns_government'
+      sub_nav.item :mpoa_post_incorporation, 'MPOA Post Incorporation','/show/mpoa_post_incorporation'
+      sub_nav.item :section_VII_faq, 'FAQ','/show/section_VII_faq'
+      sub_nav.item :section_VII_references, 'References','/show/section_VII_references'
+     end
+
+    primary.item :budget, 'Budget', '/show/budget' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :existing_budget, 'Existing Budget','/show/existing_budget'
+      sub_nav.item :taxing_authorities, 'Taxing Authorities','/show/taxing_authorities'
+      sub_nav.item :town_expenditures, 'Town Expenditures','/show/town_expenditures'
+      sub_nav.item :town_revenues, 'Town Revenues','/show/town_revenues'
+      sub_nav.item :local_towns_budgets, 'Local Towns','/show/local_towns_budgets'
+      sub_nav.item :mpoa_post_incorporation_budgets, 'MPOA Post Incorporation','/show/mpoa_post_incorporation_budgets'
+      sub_nav.item :section_VIII_faq, 'FAQ','/show/section_VIII_faq'
+      sub_nav.item :section_VIII_references, 'References','/show/section_VIII_references'
+    end
+    primary.item :considerations, 'Considerations', '/show/considerations' do |sub_nav|
+      # Add an item to the sub navigation (same params again)
+      sub_nav.item :what_are_considerations, 'What are Considerations','/show/what_are_considerations'
+      sub_nav.item :governance, 'Governance','/show/governance'
+      sub_nav.item :taxes_and_fees, 'Taxes and Fees','/show/taxes_and_fees'
+      sub_nav.item :utilities, 'Utilities','/show/utilities'
+      sub_nav.item :law_enforcement_privacy, 'Law Enforcement','/show/law_enforcement_privacy'
+      sub_nav.item :roads, 'Roads','/show/roads'
+      sub_nav.item :other_considerations, 'Other Considerations','/show/other_considerations'
+    end
+     primary.item :home, 'Home Page', '/home/index'
 #
     # you can also specify a css id or class to attach to this particular level
     # works for all levels of the menu

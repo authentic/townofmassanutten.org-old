@@ -12,19 +12,24 @@
   <meta name="robots" content="index, nofollow"/>
   <meta name="robots" content="noarchive"/>
   <%= render 'layouts/stylesheets' %>
-   <%= stylesheet_link_tag('public', :media=>'screen') %>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#viewport").mapbox({mousewheel: true});
+    });
+</script>
 </head>
 
 <body>
 <div class="container">
-  <div class="submenu">
-             <%= image_tag('home.png', :alt=>"Home", :class =>"round") %></div>
+  <nav class="sub-menu">
+             <%=link_to image_tag('home.png', :alt=>"Home", :class =>"round"), :controller => 'home', :action => "index" %></nav>
   <div class="clearfloat"></div>
   <%= render 'layouts/header' %>
 
   <div class="round" id="sidebar1">
-  
-    <nav>
+
+    <nav class>
       <%= render_navigation :level => 1..2 %>
 
       <!-- end nav --></nav>
@@ -33,13 +38,14 @@
   <div id="content">
     <div id="breadcrumbs"><%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt;&gt; " %><!-- end #breadcrumbs --></div>
     <div class="clearfloat"></div>
-    <section>
-      <%= yield %></section>
+    <div class="sections">
+      <%= yield %></div>
     <!-- end #content --></div>
   <div id="sidebar2"><%=  %>
     <!-- end .sidebar2 --></div>
   <%= render 'layouts/footer' %>
 
   <!-- end container --></div>
+
 </body>
 </html>

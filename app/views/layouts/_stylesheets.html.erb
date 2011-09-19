@@ -3,10 +3,17 @@
   <![endif]-->
   <%= stylesheet_link_tag('blueprint/screen', :media=>'screen') %>
   <%= stylesheet_link_tag('blueprint/print', :media=>'print') %>
-  <%= stylesheet_link_tag('link-icons/screen', :media=>'screen') %>
+  <%= stylesheet_link_tag('blueprint/plugins/link-icons/screen', :media=>'screen') %>
+<%= stylesheet_link_tag('blueprint/plugins/buttons/screen', :media=>'screen') %>
+<%= stylesheet_link_tag('blueprint/plugins/fancy-type/screen', :media=>'screen') %>
+<!--<%= stylesheet_link_tag('blueprint/plugins/liquid', :media=>'screen') %>-->
+<!--<%= stylesheet_link_tag('blueprint/plugins/rtl/screen', :media=>'screen') %>-->
+<%= stylesheet_link_tag('cloud-zoom.css', :media=>'screen') %>
+
+
   <!--[if lt IE 8]>
   <%= stylesheet_link_tag('blueprint/ie', :media=>'screen')%>
 <![endif]-->
 
 
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :defaults, "jquery-1.6.2.min", "cloud-zoom.1.0.2", "jquery.corner" %>

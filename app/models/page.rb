@@ -6,6 +6,8 @@ class Page < ActiveRecord::Base
     has_many :sections
     has_and_belongs_to_many :editors, :class_name => "AdminUser"
 
+
+
     validates_presence_of :name
     validates_length_of :name, :maximum => 255
     validates_presence_of :permalink
@@ -13,7 +15,7 @@ class Page < ActiveRecord::Base
     # use presence with length to disallow spaces
     validates_uniqueness_of :permalink
       # for unique values by subject, :scope => :subject_id
-
+    #Scoping
     scope :visible, where(:visible => true)
     scope :invisible, where(:visible => false)
     scope :sorted, order('pages.position ASC')
