@@ -35,6 +35,6 @@ production:
  reconnect: false
  database: townofma_townofmassanutten_production
  pool: 5
- username: townofma_olgah
+ username: townofma_olga
  password: 5346Trevino
  socket: /tmp/mysql.sock
