@@ -1,16 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.1.0'
 gem 'rake', "0.9.2"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2','< 0.3'
+gem 'mysql2'
 
 gem "simple-navigation", "~> 3.5.0"
 gem 'ckeditor', '3.6.1'
 gem 'paperclip', '2.3.15'
- gem 'will_paginate', '~> 3.0.0'
+
 
 group :development do
   gem 'rspec-rails', '2.6.1'
