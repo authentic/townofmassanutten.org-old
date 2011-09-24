@@ -51,8 +51,6 @@ SimpleNavigation::Configuration.run do |navigation|
 
 
     primary.item :executive_summary, 'Summary', '/show/executive_summary' do |sub_nav|
-      sub_nav.item :ex_sum_forward, 'Forward','/show/ex_sum_forward'
-      sub_nav.item :ex_sum_acknowledgements, 'Acknowledgements','/show/ex_sum_acknowledgements'
       sub_nav.item :ex_sum_introduction, 'Introduction','/show/ex_sum_introduction'
       sub_nav.item :ex_sum_incorporation, 'Incorporation','/show/ex_sum_incorporation'
       sub_nav.item :ex_sum_boundaries, 'Town Boundaries','/show/ex_sum_boundaries'
@@ -158,7 +156,7 @@ SimpleNavigation::Configuration.run do |navigation|
       sub_nav.item :roads, 'Roads','/show/roads'
       sub_nav.item :other_considerations, 'Other Considerations','/show/other_considerations'
     end
-     primary.item :home, 'Home Page', '/home/index'
+
 #
     # you can also specify a css id or class to attach to this particular level
     # works for all levels of the menu

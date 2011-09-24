@@ -29,22 +29,19 @@
 <div class="container">
   <%= render 'layouts/header' %>
 
-  <div class="content span-24 last">   <hr class="space">
+  <div class="content span-24 last">
     <div class="span-4">
 
       <nav id="mainNav">
         <%= render_navigation :level => 1..2, :expand_all => true %>
 
         <!-- end nav --></nav> <hr>
-      <div class="banner inner">Video</div><hr class="space" >
-         <div class="banner inner">Print Report</div>
-      <hr class="space" >
-         <div class="banner inner">Print Summary</div> <hr class="space" >
-    </div>
+      <div class="banner inner"><%= link_to("Home", {:controller => 'home', :action=>'index', :id =>"Home"}, :class=>'navlink') %></div>
+    <hr class="space"></div>
 
 
     <div class="span-18 prepend-1 last">
-      <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt;&gt; " %> <hr>
+      <div class="breadcrumbs"><%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt;&gt; " %> </div><hr>
       <%= yield %> <hr class="space"></div>
 
   </div>
