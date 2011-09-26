@@ -42,8 +42,6 @@
       <div class="span-5"><%= link_to("Home", {:controller => 'home', :action=>'index', :id =>"Home"}, :class=>'button') %></div>
     <hr class="space"></div>
 
-
-
     <div class="span-18 prepend-1 last">
       <div class="breadcrumbs"><%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt;&gt; " %> </div><hr>
       <%= yield %> <hr class="space"></div>
