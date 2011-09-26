@@ -32,11 +32,14 @@
   <div class="content span-24 last">
     <div class="span-4">
 
-      <nav id="mainNav">
+      <nav id="mainNav" class="large">
         <%= render_navigation :level => 1..2, :expand_all => true %>
 
         <!-- end nav --></nav> <hr>
-      <div class="banner inner"><%= link_to("Home", {:controller => 'home', :action=>'index', :id =>"Home"}, :class=>'navlink') %></div>
+       <div class="span-5" ><%= link_to("Study Videos", {:controller=>'public', :action=>'show', :id=>'executive_summary'}, :class=>'button') %></div>
+      <div class="span-5"><%= link_to("Print Report", "/ckeditor_assets/attachments/261/town_incorporation_study_final_report.pdf", :class=>'button') %></div>
+      <div class="span-5"><%= link_to("Print Summary", "/ckeditor_assets/attachments/260/town_incorporation_study_final_report_summary.pdf", :class=>'button') %></div>
+      <div class="span-5"><%= link_to("Home", {:controller => 'home', :action=>'index', :id =>"Home"}, :class=>'button') %></div>
     <hr class="space"></div>
 
 
