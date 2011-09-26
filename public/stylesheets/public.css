@@ -44,6 +44,7 @@ header {
 #mainNav {
     float: left;
     width: 150px;
+    background-color: #CEE2F4;
 
 }
 
@@ -59,29 +60,30 @@ header {
     text-align: left;
     cursor: pointer;
     font-family: Georgia, "Times New Roman", Times, serif;
-    width: 150px;
+
     font-size: 14px;
-    line-height: 36px;
-    font-weight: bold;
+    line-height: 18px;
+
 }
 
 
 #mainNav ul li a {
     display: block;
     cursor: pointer;
-    padding: 0 0 0 12px;
+    padding: 0 0 0 5px;
     color: #333;
     text-decoration: none;
-    background: transparent url(/images/navbg_norm.jpg) no-repeat 1px top;
+   /* background: transparent url(/images/navbg_norm.jpg) no-repeat 1px top;*/
 }
 #mainNav ul li.selected a {
-    background: transparent url(/images/navbg_selected.jpg) no-repeat 1px top;
+  /*  background: transparent url(/images/navbg_selected.jpg) no-repeat 1px top;*/
     color: #BB133E;
+    background-color: #FFECB1;
 }
 #mainNav a:hover, #mainNav a:focus, #mainNav ul li a:hover {
-    color: #f9ad81;
+    color: #BB133E;
     border-bottom: none;
-    background: #CEE2F4 url(/images/navbg_hover.jpg) no-repeat 1px top;
+   /* background: #CEE2F4 url(/images/navbg_hover.jpg) no-repeat 1px top;*/
 }
 
 #mainNav ul li ul {
@@ -110,15 +112,15 @@ header {
 }
 
 #mainNav ul li ul li a {
-    background-color: #CEE2F4;
+    background-color: #ddd;
     background-image: url(none);
 }
 #mainNav ul li ul li a:hover {
-    background-color: #CEE2F4;
+    background-color: #ddd;
     background-image: url(none);
 }
 #mainNav ul li.selected ul li  a {
-    background-color: #CEE2F4;
+    background-color: #ddd;
     background-image: url(none);
 }
 
@@ -444,7 +446,7 @@ a.button,
 button {
     display: block;
     cursor: pointer;
-    width: 110px;
+    width: 140px;
     overflow: visible;
     background-color: #09f;
     color: #fff;
@@ -452,7 +454,7 @@ button {
     font-weight: bold;
     font-size: 14px;
     text-align: center;
-    padding: 3px 10px 3px 10px; /* Links */
+    padding: 2px 5px 2px 5px; /* Links */
     border-width: 1px;
     border-style: solid;
     border-top-color: #2bf;
@@ -462,6 +464,7 @@ button {
     border-radius: 5px;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
+    margin: 2px 0 2px 5px;
 }
 a.button[href$=".pdf"]  {background-image: none;}
 a.button:hover,

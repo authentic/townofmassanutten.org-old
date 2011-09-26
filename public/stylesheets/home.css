@@ -25,15 +25,15 @@ a.button,
 button {
     display: block;
     cursor: pointer;
-    width: 150px;
+    width: 140px;
     overflow: visible;
     background-color: #09f;
     color: #fff;
-    font-family: Georgia, "Times New Roman", Times, serif;
+     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
-    padding: 3px 10px 3px 10px; /* Links */
+    padding: 2px 5px 2px 5px; /* Links */
     border-width: 1px;
     border-style: solid;
     border-top-color: #2bf;
@@ -43,6 +43,7 @@ button {
     border-radius: 5px;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
+
 }
 
 
