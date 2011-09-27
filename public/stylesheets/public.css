@@ -25,11 +25,10 @@ body {
 
 header {
     padding: 0;
-    height: 100px;
-    text-align: center;
-    background-image: url('/images/BG.png');
-    border-top: #CEE2F4 solid 22px;
-    border-bottom: #AFDBA3 solid 4px;
+    height: 108px;
+
+
+
 }
 
 /* @end Header */
@@ -44,7 +43,8 @@ header {
 #mainNav {
     float: left;
     width: 150px;
-    background-color: #CEE2F4;
+    background-color: #d6ecff;
+
 
 }
 
@@ -60,29 +60,32 @@ header {
     text-align: left;
     cursor: pointer;
     font-family: Georgia, "Times New Roman", Times, serif;
-
     font-size: 14px;
     line-height: 18px;
 
 }
 
-
-#mainNav ul li a {
+  #mainNav ul li a {
     display: block;
     cursor: pointer;
     padding: 0 0 0 5px;
-    color: #333;
+    color: #4c585a;
+
     text-decoration: none;
    /* background: transparent url(/images/navbg_norm.jpg) no-repeat 1px top;*/
 }
 #mainNav ul li.selected a {
   /*  background: transparent url(/images/navbg_selected.jpg) no-repeat 1px top;*/
     color: #BB133E;
-    background-color: #FFECB1;
+    background-color: #b1dbfe;
 }
+
+
 #mainNav a:hover, #mainNav a:focus, #mainNav ul li a:hover {
     color: #BB133E;
     border-bottom: none;
+    background-color: #b1dbfe;
+    text-decoration: underline;
    /* background: #CEE2F4 url(/images/navbg_hover.jpg) no-repeat 1px top;*/
 }
 
@@ -99,7 +102,10 @@ header {
 
 #mainNav ul li:hover ul {
     display: block;
-    border: none;
+    border: #ddd solid 1px;
+     border-radius: 2px;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
     left: 0;
 
 }
@@ -112,18 +118,25 @@ header {
 }
 
 #mainNav ul li ul li a {
-    background-color: #ddd;
-    background-image: url(none);
+    background-color: #F9FBF0;
+    background-image: url(none); color:#4c585a; font-weight: bold;
 }
 #mainNav ul li ul li a:hover {
-    background-color: #ddd;
-    background-image: url(none);
+    background-color: #F9FBF0;
+    background-image: url(none); color:#BB133E; font-weight: bold;
 }
-#mainNav ul li.selected ul li  a {
-    background-color: #ddd;
-    background-image: url(none);
+#mainNav ul li.selected ul li a {
+    background-color: #F9FBF0;
+    background-image: url(none);color:#4c585a; font-weight: bold;
 }
-
+   #mainNav ul li.selected ul li a:hover {
+    background-color: #F9FBF0;
+    background-image: url(none);color:#BB133E; font-weight: bold;
+   }
+ #mainNav ul li.selected ul li a.selected {
+    background-color: #F9FBF0;
+    background-image: url(none);color:#BB133E; font-weight: bold;
+}
 /*next prev navigation*/
 
 .prevnextnav {
@@ -170,13 +183,11 @@ header {
 
 /*end navigation*/
 /* @group Footer */
-.footer { height: auto;
-        background: #CEE2F4;
-        color: #777;
-        padding: 1.5em 0 1.5em 0;
-    font-size: 12px;
+.footer {text-align: center;
+         color: #666;
+        font-size: 11px;
 }
-
+  /*div{outline: #ccc solid 1px;}*/
 /* Headings
 -------------------------------------------------------------- */
 h3.underline {
@@ -461,7 +472,7 @@ button {
     border-right-color: #08e;
     border-bottom-color: #07d;
     border-left-color: #1af;
-    border-radius: 5px;
+   border-radius: 5px;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     margin: 2px 0 2px 5px;
@@ -570,7 +581,7 @@ h3.banner {
 
 div.outer {
     float: left;
-    background: #CEE2F4;
+    background: #ADD9A1;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;

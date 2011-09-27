@@ -10,7 +10,7 @@ body {
 .container {
     margin: 18px auto 0 auto;
     height: 576px;
-    background: #f0f2f1 url('/images/Home-page950-576.jpg') no-repeat;
+    background: #f0f2f1 url('/images/homepage.jpg') no-repeat;
 }
 
 .content {
@@ -72,4 +72,8 @@ a.button:active,
 a.button:focus {
     color: #fff;
     text-decoration: none;
+}
+ .footer {text-align: center;
+         color: #666;
+        font-size: 11px;
 }
