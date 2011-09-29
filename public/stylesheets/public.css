@@ -385,25 +385,7 @@ ol ol {
     margin-right: 1.5em;
 }
 
-.twoimg {
-    height: 280px;
-    width: 99%;
-    position: relative;
-    text-align: center;
-    margin: 0 0 20px 0;
-}
 
-.fleft {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.fright {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 /* group photo
 -------------------------------------------------------------- */
@@ -499,78 +481,18 @@ a.button:focus {
     text-decoration: none;
 }
 
-.banner {
-    background-color: #24344A;
-    color: #fff;
-    width: 80%;
-    margin-left: -1.0714em; /* 15px */
-    padding-left: 1.0714em; /* 15px */
-    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
-    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
-    box-shadow: 5px 5px 0 rgba(0, 0, 13, 0.2);
-}
-
-h2.banner {
-    font-family: "Proxima Nova Condensed Regular", Calibri, "Trebuchet MS", "Gill Sans", Frutiger, Univers, "Helvetica Neue", Arial, Helvetica;
-    margin-left: -0.7143em; /* 15px */
-    padding: 0.25em 0 0.25em 0.7143em;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-h3.banner {
-    margin-right: -0.9375em; /* 15px */
-    padding: 0.25em 0 0.25em 0.9375em;
-    color: #fff;
-}
 
 /* forms.css */
 /* forms.css */
 
 /* @round corners */
-.padding10 {
-    padding: 10px;
-}
 
-.padding11 {
-    padding: 11px;
-}
-
-.padding15 {
-    padding: 15px;
-}
-
-.padding20 {
-    padding: 20px;
-}
-
-.padding30 {
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 .border1 {
     border-left: 2px solid #AFDBA3;
     border-right: 2px solid #AFDBA3;
 
 }
-
-.bigdiv {
-    width: 920px;
-}
-
-.green {
-    background-color: #BDFFB2;
-}
-
-.blue {
-    background-color: #B2E3FF;
-}
-
-.orange {
-    background-color: #FFAE80;
-}
-
 div.outer {
     float: left;
     background: #ADD9A1;
