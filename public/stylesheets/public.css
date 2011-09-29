@@ -182,7 +182,7 @@ header {
 .prev  a {
     display: block;
     text-decoration: none;
-    padding: 4px 9px 0 0;
+    padding: 5px 9px 0 0;
     color: #BB133E;
 
     font-size: 11px;
@@ -200,7 +200,7 @@ header {
 .next  a {
     display: block;
     text-decoration: none;
-    padding: 4px 0px 0px 9px;
+    padding: 5px 0px 0px 9px;
     color: #BB133E;
     font-size: 11px;
 
@@ -214,7 +214,7 @@ header {
     font-size: 11px;
 }
 
-div{outline: #ccc solid 1px;}
+/*div{outline: #ccc solid 1px;}*/
 /* Headings
 -------------------------------------------------------------- */
 h3.underline {
@@ -289,7 +289,7 @@ thead th {
     text-shadow: #6a3d37 1px 1px 1px;
 }
 
-.datatable td.separator {padding: 1px 5px;  background: #e3ded8;}
+.datatable td.separator {padding: 1px 5px;  background: #BB133E;}
 
 
 .redtext {
@@ -301,8 +301,8 @@ thead th {
 
 .datatable caption {
     font: bold 130% "Times New Roman", Times, serif;
-    background-color: #f8f68b;
-    color: #0b00ff;
+    background-color: #7E7E7E;
+    color: #fff;
     padding: 0.4em 0 0.6em 0;
     border: 1px solid #a39f9b;
     text-align: center;
@@ -319,7 +319,7 @@ thead th {
 tbody tr td.blue{background: #CDFFFF;}
 tbody tr td.orange{background: #FFCC9A;}
 
-.noformatsell, th.noformatsell, td.noformatsell {
+.noformatsell, thead th.noformatsell,  td.noformatsell {
     background-color: white;
     border-top: none;
     border-bottom: none
