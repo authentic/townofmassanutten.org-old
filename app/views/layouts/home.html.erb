@@ -11,6 +11,25 @@
   <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
   <meta name="robots" content="index, nofollow"/>
   <meta name="robots" content="noarchive"/>
+
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push([
+          '_setAccount', 'UA-17444458-1']);
+      _gaq.push([
+          '_trackPageview']);
+      (
+              function() {
+                  var ga = document.createElement('script');
+                  ga.type = 'text/javascript';
+                  ga.async = true;
+                  ga.src = (
+                          'https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(ga, s);
+              })();
+  </script>
+
   <%= render 'layouts/stylesheets' %>
   <%= stylesheet_link_tag('home', :media=>'screen') %>
   <script language="javascript">
@@ -26,19 +45,21 @@
 <body>
 <div class="container border1 " box="yes">
   <div class="span-24 last">
-    <div class="span-24 content last"> <hr class="space"/>
+    <div class="span-24 content last">
+      <hr class="space"/>
 
-<br><br>
-</div>
+      <br><br>
+    </div>
     <div class="homeNav prepend-2 span-22 last">
-      <div class="span-5" ><%= link_to("View Final Report", {:controller => 'public', :action=>'show', :id =>"forward"}, :class=>'button') %></div>
-      <div class="span-5" ><%= link_to("View Study Videos", {:controller=>'public', :action=>'show', :id=>'executive_summary'}, :class=>'button') %></div>
-      <div class="span-5"><%= link_to("Print Final Report", "/ckeditor_assets/attachments/261/town_incorporation_study_final_report.pdf",:target=>"_blank", :class=>'button') %></div>
-      <div class="span-5 last"><%= link_to("Print Summary", "/ckeditor_assets/attachments/262/town_incorporation_study_final_report_summary.pdf",:target=>"_blank", :class=>'button') %></div>
+      <div class="span-5"><%= link_to("View Final Report", {:controller => 'public', :action=>'show', :id =>"forward"}, :class=>'button') %></div>
+      <div class="span-5"><%= link_to("View Study Videos", {:controller=>'public', :action=>'show', :id=>'executive_summary'}, :class=>'button') %></div>
+      <div class="span-5"><%= link_to("Print Final Report", "/ckeditor_assets/attachments/261/town_incorporation_study_final_report.pdf", :target=>"_blank", :class=>'button') %></div>
+      <div class="span-5 last"><%= link_to("Print Summary", "/ckeditor_assets/attachments/262/town_incorporation_study_final_report_summary.pdf", :target=>"_blank", :class=>'button') %></div>
     </div>
   </div>
 
-   <%= render 'layouts/footer' %>
+  <%= render 'layouts/footer' %>
   <!-- end container --></div>
+
 </body>
 </html>
