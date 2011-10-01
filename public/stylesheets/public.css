@@ -341,29 +341,29 @@ ol ol {
 
 /* Lists
 -------------------------------------------------------------- */
-
-/* group photo
--------------------------------------------------------------- */
+/* Feature section in ZoomEngine page */
 .zoom-section {
-    text-align: center;
-    margin: 0 auto 1.5em auto;
-    padding: 0;
-    vertical-align: top;
+	clear:both;
+	margin-top:1.5em;
+
 }
+
+* html .zoom-section {
+	display:inline;
+	clear:both;
+}
+/* Feature descriptions in ZoomEngine page */
+
 
 .zoom-small-image {
-    display: inline-block;
-    /*background-color: #eeeeee;
-    border: 5px solid #eeeeee;
-*/
-    margin: 0;
-    vertical-align: top;
+	border:4px solid #CCC;
+	float:left;
+	margin-bottom:1.5em;
 }
-
 .zoom {
     text-align: center;
     margin: 0 auto 0px auto;
-    color: blue;
+    color: #09f;
     padding: 0;
 }
 
